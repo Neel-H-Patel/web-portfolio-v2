@@ -451,6 +451,33 @@ textarea {
   display: block;
   text-align: left;
 }
+
+.image-container {
+  width: 15%; 
+  height: auto; 
+  filter: brightness(0) invert(1);
+  margin: 0 auto;
+  display: block;
+}
+
+#email-button {
+  display: inline-block;
+  background-color: #0062b9;
+  color: #0062b9;
+  padding: 1rem 2.5rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+  display: block;
+
+  &:hover {
+    background-color: darken(#0062b9, 10%);
+  }
+}
+
 .contact__form-input {
   color: #333;
   padding: 2rem;
