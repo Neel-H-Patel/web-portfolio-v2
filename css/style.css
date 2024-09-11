@@ -354,61 +354,65 @@ textarea {
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 5rem;
   margin-bottom: 11rem;
-}
-@media only screen and (max-width: 56.25em) {
-  .projects__row {
+
+  @media only screen and (max-width: 56.25em) {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     margin-bottom: 8rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .projects__row {
     text-align: center;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
-.projects__row:last-child {
-  margin-bottom: 0;
-}
+
 .projects__row-img-cont {
   overflow: hidden;
 }
+
 .projects__row-img {
   width: 100%;
   display: block;
   object-fit: cover;
 }
+
 .projects__row-content {
   padding: 2rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-}
-@media only screen and (max-width: 56.25em) {
-  .projects__row-content {
+
+  @media only screen and (max-width: 56.25em) {
     align-items: center;
   }
 }
+
+.projects__row-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .projects__row-content-title {
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 2rem;
-}
-@media only screen and (max-width: 37.5em) {
-  .projects__row-content-title {
+
+  @media only screen and (max-width: 37.5em) {
     font-size: 2.4rem;
   }
 }
+
 .projects__row-content-desc {
   font-size: 1.8rem;
   color: grey;
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 3rem;
-}
-@media only screen and (max-width: 37.5em) {
-  .projects__row-content-desc {
+
+  @media only screen and (max-width: 37.5em) {
     font-size: 1.7rem;
   }
 }
@@ -592,6 +596,25 @@ textarea {
 .project-details__showcase-img-cont {
   width: 100%;
   margin-bottom: 6rem;
+}
+
+.project-details__showcase--two-images {
+  
+  .project-details__showcase-img-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    @media only screen and (max-width: 56.25em) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .projects__row-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
 }
 .project-details__showcase-img {
   width: 100%;
