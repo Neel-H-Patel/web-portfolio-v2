@@ -230,8 +230,11 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: #0a192f url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-size: cover;
   background-position: center;
+  animation: stars 50s linear infinite;
+
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
@@ -418,9 +421,19 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: #0a192f url("https://www.transparenttextures.com/patterns/stardust.png");
   background-size: cover;
   background-position: center;
+  animation: stars 50s linear infinite;
+
+  @keyframes stars {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 1000px 1000px;
+    }
+  }
 }
 .contact__form-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -543,11 +556,19 @@ textarea {
 }
 
 .project-cs-hero {
-  color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: #0a192f url("https://www.transparenttextures.com/patterns/stardust.png");
   background-size: cover;
   background-position: center;
-  position: relative;
+  animation: stars 50s linear infinite;
+
+  @keyframes stars {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 1000px 1000px;
+    }
+  }
 }
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero {
