@@ -103,8 +103,6 @@
   background: rgb(250, 250, 250);
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
     @include respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 8rem;
