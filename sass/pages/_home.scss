@@ -111,6 +111,8 @@
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem;
+      display: grid;
+      justify-content: center;
       @include respond(phone) {
         font-size: 2.4rem;
       }
